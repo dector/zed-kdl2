@@ -19,13 +19,17 @@
 
 ; Literals
 
+; KDLv2: Tagged literals with # prefix
+(keyword) @boolean
+
+; Strings
 (string) @string
 (escape) @string.escape
+
+; Numbers
 (number) @number
 (number (decimal) @number)
 (number (exponent) @number)
-(boolean) @boolean
-"null" @constant
 
 ; Punctuation
 ["{" "}"] @punctuation.bracket

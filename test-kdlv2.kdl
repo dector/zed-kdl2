@@ -1,0 +1,52 @@
+/- kdl-version 2
+
+// KDLv2 Test File
+
+// Tagged literals (KDLv2 syntax)
+node-name #true #false #null
+
+// Raw strings (KDLv2: #""# syntax instead of r"")
+raw-example #"This is a raw string"#
+raw-multi #"Can contain "quotes" without escaping"#
+
+// Multi-line strings (KDLv2)
+multi-line """
+    This is a
+    multi-line string
+    with proper indentation
+    """
+
+description """
+    A longer description
+    that spans multiple lines
+    and preserves formatting
+    """
+
+// Custom shader example (with GLSL injection)
+custom-shader """
+    #version 330 core
+    void main() {
+        gl_FragColor = vec4(1.0);
+    }
+    """
+
+// Regular strings with new escape sequences
+regular "String with space: \s and other escapes: \n \t"
+
+// Numbers
+decimal 123
+hex 0x1A2B
+octal 0o755
+binary 0b1010
+
+// Node with children
+parent {
+    child1 "value1"
+    child2 #true
+    nested {
+        deep-value 42
+    }
+}
+
+// Properties
+node key="value" flag=#true count=10

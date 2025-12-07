@@ -7,5 +7,5 @@ description = "Syntax highlighting for KDL files."
 repository = "https://github.com/elkowar/zed-kdl"
 
 [grammars.kdl]
-repository = "https://github.com/tree-sitter-grammars/tree-sitter-kdl"
-commit = "b37e3d58e5c5cf8d739b315d6114e02d42e66664"
+repository = "https://github.com/dector/tree-sitter-kdl2"
+commit = "bb597f7a103a2aae0ef36e54113e1a867ec900e0"
